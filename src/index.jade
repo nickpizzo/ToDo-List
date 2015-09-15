@@ -1,0 +1,28 @@
+doctype html
+html(lang="en")
+  head
+    title Todo's
+    link(href="styles/main.css" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet" type="text/css")
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css")
+  body
+    .container 
+      h1 
+        [&#10003;] to-do list
+      .mainlist
+        input(type="text" id="new-text" class="input" placeholder="Add item") 
+        button(id="add")
+          i(class="fa fa-plus")
+        ul(id="todolist")
+          li 
+            input(type="checkbox" class="strikeout")    
+            | Hi Emily..
+            button(class="delete") x
+          li 
+            input(type="checkbox" class="strikeout")
+            | How are you? :)
+            button(class="delete") x
+    
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+    script(src="scripts/main.js")
+      
